@@ -3,6 +3,8 @@ const Testpage = require('../../pages/tmsandbox.js');
 
 setDefaultTimeout(60 * 1000);
 
+let selectedText;
+
 Given('the user searches for a {string}', async function (query) {
   this.testPage = new Testpage(this.page);
   await this.testPage.loadPage();
@@ -29,4 +31,20 @@ When('the site shows all the listings by best match', async function () {
 
 Then('the UI shows No results found message', async function () {
   await this.testPage.testNoResultsPage();
+});
+
+When('the user sorts the results by "Lowest Price"', async function () {
+  await this.testPage.sortByLowestPrice();
+});
+
+Then('the search results should be ordered with the lowest price first', async function () {
+  await this.testPage.verifyLowestPriceOrder();
+});
+
+When('the user clicks a result', async function () {
+  selectedText = await this.testPage.clickFirstResult();
+});
+
+Then('the browser navigates to the correct target with expected content', async function () {
+  await this.testPage.verifyNavigation(selectedText);
 });

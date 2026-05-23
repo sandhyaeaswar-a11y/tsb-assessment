@@ -13,10 +13,28 @@ Feature: Site Search
     When the user submits the search
     Then the site shows all the listings by best match
 
-  Scenario: No results shows helpful guidance
+  Scenario Outline: No results shows helpful guidance
     Given the user searches for a "<query>"
     When the user submits the search
     Then the UI shows No results found message
     Examples:
       | query      |
       | lawn mover |
+
+  Scenario Outline: Verify search results update when sorted by lowest price
+    Given the user searches for a "<query>"
+    When the user submits the search
+    And the user sorts the results by "Lowest Price"
+    Then the search results should be ordered with the lowest price first
+    Examples:
+      | query |
+      | car   |
+
+  Scenario Outline: Clicking a result navigates to correct page
+    Given the user searches for a "<query>"
+    When the user submits the search
+    And the user clicks a result
+    Then the browser navigates to the correct target with expected content
+    Examples:
+      | query |
+      | car   |
