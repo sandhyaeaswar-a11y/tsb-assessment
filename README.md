@@ -1,6 +1,6 @@
 # tsb-assessment
 
-This project has the solution to tsb-assessment. The folder structure for the project is divided into "Test Case" and "Automation". For Task#1, the test case document is stored under "Test Case" folder. Task#2 and Task3 solution is stored under "Automation" folder. Project tree is mentioned below.
+This project has the solution to tsb-assessment. The folder structure for the project is divided into "Test Case" and "Automation". For Task#1, the test case document is stored under "Test Case" folder. Task#2 and Task#3 solution is stored under "Automation" folder. Project tree is mentioned below.
 
 ```
 │   README.md
