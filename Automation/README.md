@@ -1,4 +1,4 @@
-# UI Automation
+# Automation
 
 The project automates the search functionality on the homepage (tmsandbox.co.nz) using playwright & javascript. 
 

@@ -1,5 +1,5 @@
 const { Given, When, Then, setDefaultTimeout } = require('@cucumber/cucumber');
-const Testpage = require('../../pages/tmsandbox.js');
+const Testpage = require('../../pages/SearchPage.js');
 
 setDefaultTimeout(60 * 1000);
 
