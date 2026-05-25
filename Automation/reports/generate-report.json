@@ -1,0 +1,369 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "site-search;successful-search-returns-relevant-results",
+        "keyword": "Scenario Outline",
+        "line": 9,
+        "name": "Successful search returns relevant results",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 6261174100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the user searches for a \"car\"",
+            "match": {
+              "location": "Task#2\\features\\step_definitions\\search.steps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4807917199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "the user submits the search",
+            "match": {
+              "location": "Task#2\\features\\step_definitions\\search.steps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 125744599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "the results list shows relevant items ordered matching the \"car\"",
+            "match": {
+              "location": "Task#2\\features\\step_definitions\\search.steps.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2398127800
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1136694199
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "site-search;empty-query-handled-gracefully",
+        "keyword": "Scenario Outline",
+        "line": 11,
+        "name": "Empty query handled gracefully",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1912606499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "the search field is blank space",
+            "match": {
+              "location": "Task#2\\features\\step_definitions\\search.steps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3553333299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "the user submits the search",
+            "match": {
+              "location": "Task#2\\features\\step_definitions\\search.steps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 127655899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "the site shows all the listings by best match",
+            "match": {
+              "location": "Task#2\\features\\step_definitions\\search.steps.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5070417600
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2499352299
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "site-search;no-results-shows-helpful-guidance",
+        "keyword": "Scenario Outline",
+        "line": 22,
+        "name": "No results shows helpful guidance",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1579645199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 17,
+            "name": "the user searches for a \"lawn mover\"",
+            "match": {
+              "location": "Task#2\\features\\step_definitions\\search.steps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4375561100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "the user submits the search",
+            "match": {
+              "location": "Task#2\\features\\step_definitions\\search.steps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 191263599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "the UI shows No results found message",
+            "match": {
+              "location": "Task#2\\features\\step_definitions\\search.steps.js:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1024763499
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1460616599
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "site-search;verify-search-results-update-when-sorted-by-lowest-price",
+        "keyword": "Scenario Outline",
+        "line": 31,
+        "name": "Verify search results update when sorted by lowest price",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1593847399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 25,
+            "name": "the user searches for a \"car\"",
+            "match": {
+              "location": "Task#2\\features\\step_definitions\\search.steps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4898657899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 26,
+            "name": "the user submits the search",
+            "match": {
+              "location": "Task#2\\features\\step_definitions\\search.steps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 229417300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "the user sorts the results by \"Lowest Price\"",
+            "match": {
+              "location": "Task#2\\features\\step_definitions\\search.steps.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3081450499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "the search results should be ordered with the lowest price first",
+            "match": {
+              "location": "Task#2\\features\\step_definitions\\search.steps.js:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 801003600
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1240654900
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "site-search;clicking-a-result-navigates-to-correct-page",
+        "keyword": "Scenario Outline",
+        "line": 40,
+        "name": "Clicking a result navigates to correct page",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 3947885200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 34,
+            "name": "the user searches for a \"car\"",
+            "match": {
+              "location": "Task#2\\features\\step_definitions\\search.steps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6086146800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 35,
+            "name": "the user submits the search",
+            "match": {
+              "location": "Task#2\\features\\step_definitions\\search.steps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 225535100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 36,
+            "name": "the user clicks a result",
+            "match": {
+              "location": "Task#2\\features\\step_definitions\\search.steps.js:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3433996399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 37,
+            "name": "the browser navigates to the correct target with expected content",
+            "match": {
+              "location": "Task#2\\features\\step_definitions\\search.steps.js:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2059718700
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 864183700
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "site-search",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Site Search",
+    "tags": [],
+    "uri": "Task#2\\features\\search.feature"
+  }
+]
