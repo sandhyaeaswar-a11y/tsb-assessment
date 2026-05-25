@@ -1,6 +1,6 @@
 # tsb-assessment
 
-This project has solution to tsb-assessment. The folder structure for the project is divided into "Test Case" and "Automation". For Task#1, the test case document is stored under "Test Case" folder. Task#2 and Task#3 solution is stored under "Automation" folder. Project tree is mentioned below.
+This project has solution to tsb-assessment. The folder structure for the project is divided into "Test Case" and "Automation". For Task#1, the test case document is stored under "Test Case" folder. Task#2 and Task#3 solution is stored under "Automation" folder. Project tree is mentioned below (excluding the reports).
 
 ```
 │   README.md
@@ -10,19 +10,22 @@ This project has solution to tsb-assessment. The folder structure for the projec
 |           homepage-test-cases.md
 |
 ├───Automation
+│   │   cucumber.js
+│   │   generate-report.js
+│   │   
 │   ├───Task#2
 │   │   ├───features
 │   │   │   │   search.feature
-│   │   │   │
+│   │   │   │   
 │   │   │   ├───step_definitions
 │   │   │   │       search.steps.js
-│   │   │   │
+│   │   │   │       
 │   │   │   └───support
 │   │   │           hooks.js
-│   │   │
+│   │   │           
 │   │   └───pages
 │   │           SearchPage.js
-│   │
+│   │           
 │   └───Task#3
 │       └───tests
 │           └───api
