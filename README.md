@@ -32,6 +32,8 @@ This project has solution to tsb-assessment. The folder structure for the projec
 
 ## Test Case
 
+This part of the project has the test cases captured in markdown document for `https://www.tmsandbox.co.nz` home page. 
+
 ## Automation
 
 This part of the project automates the search functionality on the homepage `tmsandbox.co.nz` and API testing on `api.trademe.co.nz/v1/Categories.json` using playwright & javascript.
@@ -43,18 +45,19 @@ This part of the project automates the search functionality on the homepage `tms
 ### Prepare the environment to run the test on Windows
 
 1. Open command prompt.
-1. Change directory to a suitable location on filesystem to clone the project
-1. Clone the repository & change directory in terminal into the clone repository
-1. Change directory into `Automation`
+2. Change directory to a suitable location on filesystem to clone the project
+3. Clone the repository & change directory in terminal into the clone repository
+4. Change directory into `Automation`
 
 ```
 cd Automation
 ```
 
-1. Run the following command to install playwright & cucumber for playwright.
+5. Run the following command to install playwright & cucumber for playwright.
 
 ```
-npm install playwright @cucumber/cucumber playwright-cucumber
+npm install playwright @cucumber/cucumber playwright-cucumber multiple-cucumber-html-reporter
+npm install @playwright/test
 npx playwright install
 ```
 
@@ -63,7 +66,13 @@ npx playwright install
 1. Execute the following command to run the feature file
 
 ```
-npx cucumber-js Task#2/features/search.feature
+npx cucumber-js
+```
+
+2. To generate the report of the test execution in HTML format run the following command. HTML report will be generated under reports/html/
+
+```
+node generate-report.js
 ```
 
 ### Steps to run Task#3 API Automation
@@ -72,4 +81,10 @@ npx cucumber-js Task#2/features/search.feature
 
 ```
 npx playwright test tests/api/categories.spec.js
+```
+
+2. Execute the following command to run the tests with report. HTML report will be automatically generated under the playwright-report folder.
+
+```
+npx playwright test tests/api/categories.spec.js --reporter=html
 ```
