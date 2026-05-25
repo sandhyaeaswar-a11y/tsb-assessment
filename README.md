@@ -91,3 +91,8 @@ npx playwright test tests/api/categories.spec.js
 ```
 npx playwright test tests/api/categories.spec.js --reporter=html
 ```
+
+### Execution reports
+
+1. `Automation/reports/html/` - This folder contains the execution report for the UI Automation task. 
+1. `Automation/playwright-report` - This folder contains the execution report for the API testing task.
